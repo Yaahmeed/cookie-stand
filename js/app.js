@@ -76,7 +76,7 @@ function handleSubmit(event) {
   let max = +event.target.maxCust.value;
   let averageCookie = +event.target.avgCookie.value;
   let newStore = new Stores(name, min, max, averageCookie);
-  console.log(newStore);
+
 
   document.getElementById('finalRow').remove();
 
@@ -97,7 +97,7 @@ function Stores(name, min, max, averageCookie) {
   this.totalCookie = 0;
 
   allStores.push(this);
-  // console.log(name);
+
 }
 
 Stores.prototype.getTotalCookie = function() {
@@ -142,7 +142,7 @@ Stores.prototype.render = function() {
 
 };
 
-console.log(allStores);
+
 
 // *STEP 2: EVENT LISTENER
 // *EXECUTABLE CODE*
